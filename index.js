@@ -71,9 +71,9 @@ app.get('/contact.html', (req, res) => {
 });
 
 app.get('/post.html', (req, res) => {
-  res.render('post');
+  res.redirect('/');
 });
 
-app.listen(4100, () => {
+app.listen(4000, () => {
   console.log('App listening on port 4000');
 });
