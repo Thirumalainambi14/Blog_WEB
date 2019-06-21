@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const fileUpload = require('express-fileupload');
 
 const app = new express();
-const Post = require('/home/thirumalainambi/NODE-JS-BLOG/database /models/Post.js');
+const Post = require('/home/thirumalainambi/Backup of projects/NODE-JS-BLOG/database /models/Post.js');
 mongoose.connect('mongodb://localhost/node-js-blog', { useNewUrlParser: true });
 
 app.use(fileUpload());
@@ -74,6 +74,6 @@ app.get('/post.html', (req, res) => {
   res.render('post');
 });
 
-app.listen(4000, () => {
+app.listen(4100, () => {
   console.log('App listening on port 4000');
 });
